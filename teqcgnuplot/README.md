@@ -34,18 +34,24 @@ In Windows Command Prompt, teqcgnuplot.cmd will:
 
 ## Installation
 
-Download and extract `dist\teqcgnuplot.zip`. I added TEQC Windows 64-bit 7/8/10 (gcc-mingw64 compile, source: https://www.unavco.org/software/data-processing/teqc/teqc.html) and RNXCMP v4.2.0 Windows (mingw64 compile, source: https://terras.gsi.go.jp/ja/crx2rnx.html) to Gnuplot v6.0.3 Windows (mingw64 compile, source: http://gnuplot.info/ ). You can use TEQC and RNXCMP in Windows from `..\teqcgnuplot\bin\`.
+Download and extract `dist\teqcgnuplot.zip`.
+
+I added TEQC Windows 64-bit 7/8/10 (gcc-mingw64 compile, source: https://www.unavco.org/software/data-processing/teqc/teqc.html) and RNXCMP v4.2.0 Windows (mingw64 compile, source: https://terras.gsi.go.jp/ja/crx2rnx.html) to Gnuplot v6.0.3 Windows (mingw64 compile, source: http://gnuplot.info/ ). You can use TEQC and RNXCMP in Windows from `..\teqcgnuplot\bin\`.
 
 ## Example
 
 1. After downloading and extracting `dist/teqcgnuplot.zip`, you will get a subfolder `teqcgnuplot\` and the main `teqcgnuplot.cmd` script.
+
    <img alt="A screenshot of my working directory after downloading and extracting teqcgnuplot.zip to a working folder" src="images/image5.png" width=50%>
 
 2. A demo with NEGI 2025:001. The script created a `negi` folder, and downloaded GNSS data of NEGI 2025:001 from NGS servers.
+
    <img alt="A screenshot of my demo with NEGI station for January 1st, 2025" src="images/image6.png" width=50%>
 
 3. The `teqcgnuplot.cmd` ran TEQC +qc at 5deg elevation cut-off to get QC results, then generated various slip plots from the QC results.
+
    <img alt="A screenshot of my demo with NEGI station for January 1st, 2025. Here TEQC QC summary is displayed" src="images/image7.png" width=50%>
 
 4. Process completed! You should get several slip plots in PNG format.
+
    <img alt="A screenshot of my demo with NEGI station for January 1st, 2025, showing multiple slip plots were created in PNG format" src="images/image3.png" width=50%>
